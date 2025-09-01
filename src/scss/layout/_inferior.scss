@@ -1,5 +1,5 @@
 @include tablet {
-    .seccion-inferior{
+    .seccion-inferior {
         display: grid;
         grid-template-columns: 2fr 1fr;
         column-gap: 2rem;
@@ -9,39 +9,45 @@
 .entrada-blog {
     margin-bottom: 2rem;
 
-    @include tablet{
+    @include tablet {
         display: grid;
         grid-template-columns: 1fr 2fr;
         column-gap: 2rem;
     }
-    &:last-of-type{
+
+    &:last-of-type {
         margin-bottom: 0;
     }
 }
 
-.texto-entrada{
-    a{
+.informacion-meta {
+    span {
+        color: $amarillo;
+    }
+}
+
+.texto-entrada {
+    a {
         color: $negro;
         margin-top: 2rem;
         display: block;
+
         @include tablet {
             margin-top: 0;
         }
 
     }
-    h4{
+
+    h4 {
         margin: 0;
         line-height: 1.4;
 
-        &::after{
+        &::after {
             content: '';
             display: block;
             height: .5rem;
             background-color: $verde;
             margin-top: 1rem;
         }
-    }
-    span{
-        color: $amarillo;
     }
 }
